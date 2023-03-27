@@ -26,7 +26,7 @@ let logoSwiper = new Swiper(".reviews", {
 
     slidesPerView: 1,
     spaceBetween: 10,
-    centeredSlides : true,
+    centeredSlides : false,
     slidesOffsetBefore :  0,
     slidesOffsetAfter :  0,
     grabCursor: true,
@@ -34,6 +34,8 @@ let logoSwiper = new Swiper(".reviews", {
 
     breakpoints: {
 
+
+        
         730: {
             slidesPerView: 1,
         },

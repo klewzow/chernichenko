@@ -1271,6 +1271,7 @@ body._active {
   position: relative;
   width: 30px;
   height: 20px;
+  padding-right: 25px;
   background-color: transparent;
 }
 
@@ -1633,7 +1634,7 @@ body._active {
   .footer__container {
     background-image: none;
     background-color: #000;
-    border-radius: 35px;
+    border-radius: 15px;
   }
 
   .footer__gred {

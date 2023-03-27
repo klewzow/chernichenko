@@ -631,7 +631,7 @@ body._active {
   margin-top: 20px;
   padding: 35px 15px;
   border-radius: 40px;
-  min-width: 318px;
+  min-width: 300px;
 }
 
 .body__box-items.black {
@@ -1371,7 +1371,7 @@ body._active {
 @media (min-width: 720px) {
   .body__box-items {
     margin-top: 100px;
-    padding: 60px 45px;
+    padding: 60px 25px;
   }
 
   .body__box-items:not(:last-child) {

@@ -1,0 +1,8 @@
+### VS Code ###
+.vscode/*
+/#src/*
+.node_modules/*
+/*.png
+/*.js
+/*.json
+node_modules/*

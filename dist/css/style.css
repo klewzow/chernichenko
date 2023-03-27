@@ -1271,8 +1271,8 @@ body._active {
   position: relative;
   width: 30px;
   height: 20px;
-  padding-right: 25px;
   background-color: transparent;
+  margin-right: 15px;
 }
 
 .burger__menu::before,

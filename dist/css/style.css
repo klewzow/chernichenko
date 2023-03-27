@@ -1615,6 +1615,17 @@ body._active {
 }
 
 @media (max-width: 960px) {
+  .benefis__body {
+    border-radius: 10px;
+    background-image: none;
+    background-color: #000 !important;
+    margin-bottom: 10px;
+  }
+
+  .benefis__button {
+    margin-bottom: 40px;
+  }
+
   .text-block {
     margin-top: 20px;
   }
@@ -1634,7 +1645,6 @@ body._active {
   .footer__container {
     background-image: none;
     background-color: #000;
-    border-radius: 15px;
   }
 
   .footer__gred {
@@ -1683,6 +1693,7 @@ body._active {
     grid-column: 1/4;
     -ms-grid-row: 5;
     grid-row: 5;
+    padding-bottom: 25px;
   }
 
   .footer__greed-title-logo {

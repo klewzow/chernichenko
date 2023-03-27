@@ -26,7 +26,9 @@ let logoSwiper = new Swiper(".reviews", {
 
     slidesPerView: 1,
     spaceBetween: 10,
-    centeredSlides: false,
+    centeredSlides : true,
+    slidesOffsetBefore :  0,
+    slidesOffsetAfter :  0,
     grabCursor: true,
     autoHeight: false,
 

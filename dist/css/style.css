@@ -125,6 +125,7 @@ body._active {
   max-width: 1890px;
   margin: 0 auto;
   background-color: #E9E9E9;
+  padding: 0 6px;
 }
 
 [class*=__container].sm {
@@ -518,7 +519,7 @@ body._active {
 }
 
 .benefis__body-item-title {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 500;
   padding-bottom: 30px;
 }
@@ -564,8 +565,16 @@ body._active {
   background-image: url(../img/fromMe/bg_fiolet.png);
 }
 
+.start {
+  margin-bottom: 10px;
+}
+
 .start__text {
   max-width: 90%;
+}
+
+.start__title {
+  margin-left: 100px;
 }
 
 .start__body {
@@ -696,6 +705,10 @@ body._active {
   background-repeat: no-repeat;
   background-position: 0% 300px;
   background-size: 100%;
+}
+
+.working__info-title {
+  margin-left: 100px;
 }
 
 .working__body {
@@ -945,6 +958,12 @@ body._active {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .contact__items {
@@ -996,16 +1015,15 @@ body._active {
   text-transform: capitalize;
   padding: 0 0.3rem;
   left: 0.9375rem;
-  top: 30%;
+  top: 13px;
   pointer-events: none;
   background-color: #fff;
 }
 
 .form__inputbox {
   border: 1px solid rgb(139, 134, 134);
-  padding: 7px 10px;
+  padding: 7px 0px;
   border-radius: 15px;
-  background-color: none;
   position: relative;
   margin-bottom: 25px;
 }
@@ -1020,8 +1038,16 @@ body._active {
   font-size: 1em;
 }
 
+.form__inputbox textarea {
+  max-width: 320px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+
 .form__inputbox input:focus ~ label,
-.form__inputbox input:valid ~ label {
+.form__inputbox input:valid ~ label,
+.form__inputbox textarea:focus ~ label,
+.form__inputbox textarea:valid ~ label {
   top: -10px;
 }
 
@@ -1037,6 +1063,10 @@ body._active {
   -ms-flex-pack: center;
   justify-content: center;
   padding-bottom: 35px;
+}
+
+.form__button {
+  margin-top: 0px;
 }
 
 .text-button {
@@ -1550,7 +1580,7 @@ body._active {
 
 @media (max-width: 1152px) {
   .items__text {
-    padding-left: 20px;
+    padding: 0 15px;
   }
 
   .items__text-title {
@@ -1601,10 +1631,6 @@ body._active {
   .contact__info {
     margin: 30px 0px 30px 30px;
   }
-
-  .contact__info {
-    margin: 0px 0px 30px 30px;
-  }
 }
 
 @media (max-width: 1112px) {
@@ -1618,12 +1644,16 @@ body._active {
   .benefis__body {
     border-radius: 10px;
     background-image: none;
-    background-color: #000 !important;
+    background-color: #221E1E !important;
     margin-bottom: 10px;
   }
 
+  .benefis__body-title {
+    font-size: 48px;
+  }
+
   .benefis__button {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
 
   .text-block {
@@ -1632,10 +1662,8 @@ body._active {
 
   .text-title {
     font-size: 48px;
-  }
-
-  .text-title {
-    margin-top: 20px;
+    margin-top: 10px;
+    line-height: 120%;
   }
 
   .text-subtitle {
@@ -1814,12 +1842,28 @@ body._active {
     bottom: 5%;
   }
 
+  .about__text-title {
+    margin: 0px 0px 30px 0px;
+    text-align: center;
+  }
+
+  .start__title {
+    margin: 0px 0px 30px 0px;
+    text-align: center;
+  }
+
   .working__container {
     padding: 20px 10px;
+    margin: 20px 0;
+  }
+
+  .working__info-title {
+    margin: 0px 0px 30px 0px;
+    text-align: center;
   }
 
   .working__body-text {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   .working__body-text-items {
@@ -1827,11 +1871,12 @@ body._active {
   }
 
   .working__body-text-items {
-    padding-left: 50px;
+    padding: 20px 10px;
   }
 
-  .working__body-text-items {
-    padding: 20px 10px;
+  .contact__info {
+    margin: 0px 0px 30px 0px;
+    text-align: center;
   }
 }
 
@@ -1844,8 +1889,8 @@ body._active {
     background-color: #fff;
     background-image: none;
     background-position: top left;
-    border-radius: 30px;
-    padding: 20px 30px 20px 20px;
+    border-radius: 10px;
+    padding: 10px 5px 10px 5px;
   }
 
   .form__username {
@@ -1863,6 +1908,21 @@ body._active {
 @media (max-width: 685px) {
   .message__items {
     grid-auto-rows: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .benefis__body-title {
+    font-size: 40px;
+  }
+
+  .start__buttons {
+    text-align: center;
+  }
+
+  .start__buttons button {
+    margin-top: 0px;
     margin-bottom: 20px;
   }
 }
@@ -1887,11 +1947,13 @@ body._active {
   }
 
   .items__text-button {
-    margin-left: 10px;
+    margin: 10px;
   }
 
   .items__text-link {
-    margin-left: 5px;
+    margin-left: 0px;
+    text-align: center;
+    line-height: 150%;
   }
 
   .working__container {
@@ -1904,5 +1966,9 @@ body._active {
 
   .text-button {
     margin-left: 10px;
+  }
+
+  .form__buttons {
+    padding-bottom: 15px;
   }
 }

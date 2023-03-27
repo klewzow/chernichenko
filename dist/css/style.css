@@ -1130,7 +1130,6 @@ body._active {
   color: #fff;
   width: 100%;
   height: 100%;
-  border: 1px solid red;
   min-height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
